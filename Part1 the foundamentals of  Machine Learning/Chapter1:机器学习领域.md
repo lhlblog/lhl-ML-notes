@@ -1,17 +1,7 @@
-# Chapter 1 机器学习领域
- * [Chapter 1 机器学习领域]()
-     * [1.examples of ML applications 和一些常见解决办法]() 
-     * [2.机器学习的种类]() 
-          * [1.有监督学习/无监督学习/半监督学习/强化学习]() 
-          * [2.批量学习/在线学习]() 
-          * [3.基于实例/基于模型]() 
-     * [3.机器学习的挑战]() 
-     * [4.测试和验证Testing and Validating]() 
-          * [1.超参数调整和模型选择Hyperparameter Tuning and Model Selection]() 
-          * [Data Mismatch]() 
-     * [PS：No free lunch theorem]() 
+# Chapter1机器学习领域
 
-## 1.examples of ML applications 和一些常见解决办法
+
+## 1.examples-of-ML-applications-和一些常见解决办法
 1. 产品线上产品图像分类： image classification， CNNs。
  2. 检测大脑肿瘤：semantic segmentation， 要求更高，对每一个pixel像素进行分类， CNNs 。
  3. 自动分类新闻文章：natural language process（NLP)，文本分类，RNNs,CNNs, Transformers。
