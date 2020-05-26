@@ -2,17 +2,17 @@
 
 <!-- TOC -->
 
-   * [Chapter1机器学习领域](#Chapter1机器学习领域)
-      * [1.examples-of-ML-applications-和一些常见解决办法](##1.examples-of-ML-applications-和一些常见解决办法)
-      * [2.机器学习的种类](##2.机器学习的种类)
-         * [1.有监督学习/无监督学习/半监督学习/强化学习](###1.有监督学习/无监督学习/半监督学习/强化学习)
-         * [2.批量学习/在线学习](###2.批量学习/在线学习)
-         * [3.基于实例/基于模型](###3.基于实例/基于模型)
-      * [3.机器学习的挑战](##3.机器学习的挑战)
-      * [4.测试和验证Testing-and-Validating](##4.测试和验证Testing-and-Validating)
-         * [1.超参数调整和模型选择Hyperparameter Tuning and Model Selection](###1.超参数调整和模型选择Hyperparameter-Tuning-and-Model-Selection)
-         * [2.Data-Mismatch](###2.Data-Mismatch)
-   * [PS:No-free-lunch-theorem](##No-free-lunch-theorem)
+   - [Chapter1机器学习领域](#Chapter1机器学习领域)
+      - [1.examples-of-ML-applications-和一些常见解决办法](##1.examples-of-ML-applications-和一些常见解决办法)
+      - [2.机器学习的种类](##2.机器学习的种类)
+         - [1.有监督学习/无监督学习/半监督学习/强化学习](###1.有监督学习/无监督学习/半监督学习/强化学习)
+         - [2.批量学习/在线学习](###2.批量学习/在线学习)
+         - [3.基于实例/基于模型](###3.基于实例/基于模型)
+      - [3.机器学习的挑战](##3.机器学习的挑战)
+      - [4.测试和验证Testing-and-Validating](##4.测试和验证Testing-and-Validating)
+         - [1.超参数调整和模型选择Hyperparameter Tuning and Model Selection](###1.超参数调整和模型选择Hyperparameter-Tuning-and-Model-Selection)
+         - [2.Data-Mismatch](###2.Data-Mismatch)
+   - [PS:No-free-lunch-theorem](##No-free-lunch-theorem)
    
    
    
