@@ -93,4 +93,23 @@ The amount of regularization to apply during learning can be controlled by a **h
 holdout validation （holdout 直译是坚持的意思，validation  验证）：从训练集里hold out 一部分数据集叫validation set，然后原始training set 减去validation set得到新的training set，用这个新的训练集来训练各个候选模型with各个参数，然后用在validation set上表现最好的那个模型，选择这个模型，之后在full training set （including validation set）训练，得到最后的模型，最后在原始的testing set 上评价这个最后的模型，得到最后的generalization error。
 **这个new held out set 叫做validation set, 也叫做development set，dev set**
 validation set 选的过大过小都不合适，为了解决这个问题，使用**cross validation**--用很多小的验证集。Each model is evaluated once per validation set after it is trained on the rest of the data. By averaging out all the evaluations of a model, you get a much more accurate measure of its performance.There is a drawback, however: the training time is multiplied by the number of validation sets.
+### Data Mismatch
+就是想说 训练的数据集和test的数据集直接的差距有点大，比如一个来自网站， 一个来自APP， 那么这样你用来自网站的数据训练出来的模型怎么可能在来自APP的数据集上有好的表现呢？这里就是说，一般就是找到一个量足够打的数据集，然后分成一个train和一个test,或者shuffle them 。（！！等实际应用到的时候再来看看）
+
+# PS：No free lunch theorem
+NFL理论<br>
+这里就是想说模型一开始就是根据实际经验给出一个assumption模型，然后在这个模型的基础上进行优化。
+
+
+
+
+
+
+
+
+
+
+
+
+
 
