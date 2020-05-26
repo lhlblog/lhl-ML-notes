@@ -7,10 +7,10 @@
          * [3.基于实例/基于模型](###3.基于实例/基于模型)
       * [3.机器学习的挑战](##3.机器学习的挑战)
       * [4.测试和验证Testing-and-Validating](##4.测试和验证Testing-and-Validating)
-         * [1.超参数调整和模型选择Hyperparameter-Tuning-and-Model-Selection](###1.超参数调整和模型选择Hyperparameter-Tuning-and-Model-Selection)
+         * [1.超参数调整和模型选择Hyperparameter Tuning and Model Selection](###1.超参数调整和模型选择Hyperparameter-Tuning-and-Model-Selection)
          * [2.Data-Mismatch](###2.Data-Mismatch)
-   * [PS：No-free-lunch-theorem](##No-free-lunch-theorem)
-
+   * [PS:No-free-lunch-theorem](##No-free-lunch-theorem)
+   
 ## 1.examples-of-ML-applications-和一些常见解决办法
 1. 产品线上产品图像分类： image classification， CNNs。
  2. 检测大脑肿瘤：semantic segmentation， 要求更高，对每一个pixel像素进行分类， CNNs 。
