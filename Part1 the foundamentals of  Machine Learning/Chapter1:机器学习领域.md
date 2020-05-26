@@ -8,15 +8,15 @@
          - [2.批量学习/在线学习](#no22)
          - [3.基于实例/基于模型](#no23)
       - [3.机器学习的挑战](#no3)
-      - [4.测试和验证Testing-and-Validating](#no4)
+      - [4.测试和验证Testing and Validating](#no4)
          - [1.超参数调整和模型选择Hyperparameter Tuning and Model Selection](#no41)
-         - [2.Data-Mismatch](#no42)
-   - [PS:No-free-lunch-theorem](#no5)
+         - [2.Data Mismatch](#no42)
+   - [PS:No free lunch theorem](#no5)
    
    
    
 <a name="no1"></a>   
-## 1.examples-of-ML-applications-和一些常见解决办法
+## 1.examples of ML applications 和一些常见解决办法
 1. 产品线上产品图像分类： image classification， CNNs。
  2. 检测大脑肿瘤：semantic segmentation， 要求更高，对每一个pixel像素进行分类， CNNs 。
  3. 自动分类新闻文章：natural language process（NLP)，文本分类，RNNs,CNNs, Transformers。
@@ -108,7 +108,7 @@ summary一下：
 The amount of regularization to apply during learning can be controlled by a **hyperparameter**.
 这里有个具体说明： [https://www.cnblogs.com/fcfc940503/p/10966034.html](https://www.cnblogs.com/fcfc940503/p/10966034.html)
 <a name="no4"></a>
-## 4.测试和验证Testing-and-Validating
+## 4.测试和验证Testing and Validating
 把数据分为training set 和 testing set ， error rate叫做`generalization error`，也叫out of sample error。如果training error 低，但是generalization error高，说明模型对training set 过拟合了。(regularization could avoid overfitting)
 
 <a name="no41"></a>
@@ -119,11 +119,11 @@ holdout validation （holdout 直译是坚持的意思，validation  验证）�
 validation set 选的过大过小都不合适，为了解决这个问题，使用**cross validation**--用很多小的验证集。Each model is evaluated once per validation set after it is trained on the rest of the data. By averaging out all the evaluations of a model, you get a much more accurate measure of its performance.There is a drawback, however: the training time is multiplied by the number of validation sets.
 
 <a name="no42"></a>
-### 2.Data-Mismatch
+### 2.Data Mismatch
 就是想说 训练的数据集和test的数据集直接的差距有点大，比如一个来自网站， 一个来自APP， 那么这样你用来自网站的数据训练出来的模型怎么可能在来自APP的数据集上有好的表现呢？这里就是说，一般就是找到一个量足够打的数据集，然后分成一个train和一个test,或者shuffle them 。（！！等实际应用到的时候再来看看）
 
 <a name="no5"></a>
-# PS:No-free-lunch-theorem
+# PS:No free lunch theorem
 NFL理论<br>
 这里就是想说模型一开始就是根据实际经验给出一个assumption模型，然后在这个模型的基础上进行优化。
 
