@@ -1,23 +1,21 @@
+<a name="no"></a>
 # Chapter1机器学习领域
 
-<!-- TOC -->
-
-   - [Chapter1机器学习领域](#Chapter1机器学习领域)
-      - [1.examples-of-ML-applications-和一些常见解决办法](##1.examples-of-ML-applications-和一些常见解决办法)
-      - [2.机器学习的种类](##2.机器学习的种类)
-         - [1.有监督学习/无监督学习/半监督学习/强化学习](###1.有监督学习/无监督学习/半监督学习/强化学习)
-         - [2.批量学习/在线学习](###2.批量学习/在线学习)
-         - [3.基于实例/基于模型](###3.基于实例/基于模型)
-      - [3.机器学习的挑战](##3.机器学习的挑战)
-      - [4.测试和验证Testing-and-Validating](##4.测试和验证Testing-and-Validating)
-         - [1.超参数调整和模型选择Hyperparameter Tuning and Model Selection](###1.超参数调整和模型选择Hyperparameter-Tuning-and-Model-Selection)
-         - [2.Data-Mismatch](###2.Data-Mismatch)
-   - [PS:No-free-lunch-theorem](##No-free-lunch-theorem)
+   - [Chapter1机器学习领域](#no)
+      - [1.examples of ML applications 和一些常见解决办法](##no1)
+      - [2.机器学习的种类](##no2)
+         - [1.有监督学习/无监督学习/半监督学习/强化学习](###no21)
+         - [2.批量学习/在线学习](###no22)
+         - [3.基于实例/基于模型](###no23)
+      - [3.机器学习的挑战](##no3)
+      - [4.测试和验证Testing-and-Validating](##no4)
+         - [1.超参数调整和模型选择Hyperparameter Tuning and Model Selection](###no41)
+         - [2.Data-Mismatch](###no42)
+   - [PS:No-free-lunch-theorem](##no5)
    
    
    
- <!-- /TOC -->
-   
+<a name="no1"></a>   
 ## 1.examples-of-ML-applications-和一些常见解决办法
 1. 产品线上产品图像分类： image classification， CNNs。
  2. 检测大脑肿瘤：semantic segmentation， 要求更高，对每一个pixel像素进行分类， CNNs 。
@@ -32,8 +30,10 @@
  11. 处理展示复杂的高维度数据：数据可视化，维度降低技术。
  12. 根据顾客过去的购买数据，为顾客推荐产品：推荐系统，ANN，input是过去的购买数据，output是下一个想要买的产品。
  13. 智能游戏机器人：强化学习和深度学习的结合。
-
+ 
+<a name="no2"></a>
 ## 2.机器学习的种类
+<a name="no21"></a>
 ### 1.有监督学习/无监督学习/半监督学习/强化学习
 `Whether or not they are trained with human supervision (supervised, nsupervised, semisupervised, and Reinforcement Learning)。`
 **有监督学习**
@@ -54,6 +54,8 @@ In supervised learning, the training set you feed to the algorithm includes the 
 大多数半监督算法是有监督和无监督的组合。例如，**深度信念网络 deep belief networks (DBNs)** 是基于来自**无监督的受限玻尔兹曼机restricted Boltzmann machines (RBMs)** 。 RBMs are trained sequentially in an unsupervised manner, and then the whole system is fine-tuned using supervised learning techniques.
 **强化学习**
 （这一部分就比较特殊了，原书说RL 是十分不同的野兽，需要单独拿出来入门）
+
+<a name="no22"></a>
 ### 2.批量学习/在线学习
 `Whether or not they can learn incrementally on the fly (online versus batch learning)`
 **批量学习，batch learning：**
@@ -68,6 +70,8 @@ online learning 也可以被用于大数据中，就是特别多特别多的data
 如果LR过低，系统会产生惯性，以至于学习越来越慢，但是受新数据中noise或非代表性数据（比如异常值outliers）的影响就会比较小。
 
 在线学习的一个挑战是是否把糟糕的数据喂进了网络。
+
+<a name="no23"></a>
 ### 3.基于实例/基于模型
 `Whether they work by simply comparing new data points to known data points, or instead by detecting patterns in the training data and building a predictive model, much like scientists do (instance-based versus model-based learning)`
 **基于实例：**
@@ -84,6 +88,8 @@ summary一下：
  2. 选择一个模型
  3. 训练模型（最好的fitness function or utility function； 最差的cost function）
  4. 应用模型，进行预测，这叫`inference`
+ 
+<a name="no3"></a>
 ## 3.机器学习的挑战
 **算法好不好，数据好不好**
 |no.|`bad data`|details|
@@ -101,17 +107,22 @@ summary一下：
  `约束模型，也叫Regularization constraint（正则化约束）`
 The amount of regularization to apply during learning can be controlled by a **hyperparameter**.
 这里有个具体说明： [https://www.cnblogs.com/fcfc940503/p/10966034.html](https://www.cnblogs.com/fcfc940503/p/10966034.html)
+<a name="no4"></a>
 ## 4.测试和验证Testing-and-Validating
 把数据分为training set 和 testing set ， error rate叫做`generalization error`，也叫out of sample error。如果training error 低，但是generalization error高，说明模型对training set 过拟合了。(regularization could avoid overfitting)
 
+<a name="no41"></a>
 ### 1.超参数调整和模型选择Hyperparameter Tuning and Model Selection
 **Hyperparameter Tuning** 
 holdout validation （holdout 直译是坚持的意思，validation  验证）：从训练集里hold out 一部分数据集叫validation set，然后原始training set 减去validation set得到新的training set，用这个新的训练集来训练各个候选模型with各个参数，然后用在validation set上表现最好的那个模型，选择这个模型，之后在full training set （including validation set）训练，得到最后的模型，最后在原始的testing set 上评价这个最后的模型，得到最后的generalization error。
 **这个new held out set 叫做validation set, 也叫做development set，dev set**
 validation set 选的过大过小都不合适，为了解决这个问题，使用**cross validation**--用很多小的验证集。Each model is evaluated once per validation set after it is trained on the rest of the data. By averaging out all the evaluations of a model, you get a much more accurate measure of its performance.There is a drawback, however: the training time is multiplied by the number of validation sets.
+
+<a name="no42"></a>
 ### 2.Data-Mismatch
 就是想说 训练的数据集和test的数据集直接的差距有点大，比如一个来自网站， 一个来自APP， 那么这样你用来自网站的数据训练出来的模型怎么可能在来自APP的数据集上有好的表现呢？这里就是说，一般就是找到一个量足够打的数据集，然后分成一个train和一个test,或者shuffle them 。（！！等实际应用到的时候再来看看）
 
+<a name="no5"></a>
 # PS:No-free-lunch-theorem
 NFL理论<br>
 这里就是想说模型一开始就是根据实际经验给出一个assumption模型，然后在这个模型的基础上进行优化。
