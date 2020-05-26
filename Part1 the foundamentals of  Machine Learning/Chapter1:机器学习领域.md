@@ -2,16 +2,16 @@
 # Chapter1机器学习领域
 
    - [Chapter1机器学习领域](#no)
-      - [1.examples of ML applications 和一些常见解决办法](##no1)
-      - [2.机器学习的种类](##no2)
-         - [1.有监督学习/无监督学习/半监督学习/强化学习](###no21)
-         - [2.批量学习/在线学习](###no22)
-         - [3.基于实例/基于模型](###no23)
-      - [3.机器学习的挑战](##no3)
-      - [4.测试和验证Testing-and-Validating](##no4)
-         - [1.超参数调整和模型选择Hyperparameter Tuning and Model Selection](###no41)
-         - [2.Data-Mismatch](###no42)
-   - [PS:No-free-lunch-theorem](##no5)
+      - [1.examples of ML applications 和一些常见解决办法](#no1)
+      - [2.机器学习的种类](#no2)
+         - [1.有监督学习/无监督学习/半监督学习/强化学习](#no21)
+         - [2.批量学习/在线学习](#no22)
+         - [3.基于实例/基于模型](#no23)
+      - [3.机器学习的挑战](#no3)
+      - [4.测试和验证Testing-and-Validating](#no4)
+         - [1.超参数调整和模型选择Hyperparameter Tuning and Model Selection](#no41)
+         - [2.Data-Mismatch](#no42)
+   - [PS:No-free-lunch-theorem](#no5)
    
    
    
