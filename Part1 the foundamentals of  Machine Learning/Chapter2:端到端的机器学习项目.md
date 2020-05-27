@@ -2,14 +2,15 @@
 # Chapter2:end-to-end machine learning project
 
   - [Chapter2:end-to-end machine learning project](#no)
-    - [working with real data](#no1)
-    - [look at the big picture](#no2)
-      - [Frame the problem](#no21)
-      - [选择一个评价指标 select a performance measure](#no22)
+    - [1.working with real data](#no1)
+    - [2.look at the big picture](#no2)
+      - [2.1.Frame the problem](#no21)
+      - [2.2.选择一个评价指标 select a performance measure](#no22)
+      - [2.3.check the assumpthions](#no23)
 
 
 <a name="no1"></a>
-## working with real data
+## 1.working with real data
 一些常见的获得数据集的网站
 - Popular open data repositories
   - [UC Irvine Machine Learning Repository](http://archive.ics.uci.edu/ml/index.php)
@@ -26,13 +27,13 @@
 
 
 <a name="no2"></a>
-## look at the big picture
+## 2.look at the big picture
 <a name="no21"></a>
-### Frame the problem
+### 2.1.Frame the problem
 确定objective,目的会帮助确定最后的算法selection， 用来评价模型的performance measure， 花费多少经历进行调整how much effort you will spend tweaking it.这里有一个概念词是`data pipeline`, 官方解释是 *A sequence of data processing components, and components typically run asynchronously*
 
 <a name="no22"></a>
-### 选择一个评价指标 select a performance measure
+### 2.2.选择一个评价指标 select a performance measure
 `a typical performance measure for regression problems is Root Mean Square Error`=**RMSE**       
 <a href="https://www.codecogs.com/eqnedit.php?latex=\operatorname{RMSE}(\mathbf{X},&space;h)=\sqrt{\frac{1}{m}&space;\sum_{i=1}^{m}\left(h\left(\mathbf{x}^{(i)}\right)-y^{(i)}\right)^{2}}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\operatorname{RMSE}(\mathbf{X},&space;h)=\sqrt{\frac{1}{m}&space;\sum_{i=1}^{m}\left(h\left(\mathbf{x}^{(i)}\right)-y^{(i)}\right)^{2}}" title="\operatorname{RMSE}(\mathbf{X}, h)=\sqrt{\frac{1}{m} \sum_{i=1}^{m}\left(h\left(\mathbf{x}^{(i)}\right)-y^{(i)}\right)^{2}}" /></a>
 - m 是说数据集里面例子的个数
@@ -48,8 +49,13 @@
 >   - MAE 对应的是l1 norm, 也叫做Manhattan norm。               
 > - **note:**       
 >The higher the norm index, the more it focuses on large values and neglects small ones. This is why the RMSE is more sensitive to outliers than the MAE. But when outliers are exponentially rare (like in a bell-shaped curve), the RMSE performs very well and is generally preferred.
+<a name="no23"></a>
+### 2.3.check the assumpthions
+你假设的到底是分类问题还是预测问题
 
-
+<a name="no3"></a>
+## 3.get the data
+通过函数得到数据 见jupyter
 
 
 
