@@ -80,7 +80,7 @@ online learning 也可以被用于大数据中，就是特别多特别多的data
 **基于模型：**
 这里就稍微有点点复杂多话了。这里有点`prediction`的意思。对训练数据构造一个模型，然后通过预测的方式推广到新数据。
 
-【例子：训练的数据集有X和Y，然后model selection 了一个线性linear model：Y=m+tX。之后，需要确定你的两个参数m 和t，如何确实m和t呢？这里就需要一个`performance measure`，你可以定义一个`fitness function`（也叫utility function，用来评价模型用这套参数的话，会表现的有多好），或者也可以定义一个==cost function==(用来评价模型用这套参数的话，会表现的有多差）。然后你就开业把你的训练数据放进模型不断的training（在python代码里，会是 **.fit(训练数据)** 的形式）模型，知道找到使cost function 最低的那套参数值。然后就可以预测啦，新数据a（和X是一个类型的数据），然后去预测b（和Y是一个类型的数据）。】
+【例子：训练的数据集有X和Y，然后model selection 了一个线性linear model：Y=m+tX。之后，需要确定你的两个参数m 和t，如何确实m和t呢？这里就需要一个`performance measure`，你可以定义一个`fitness function`（也叫utility function，用来评价模型用这套参数的话，会表现的有多好），或者也可以定义一个`cost function`(用来评价模型用这套参数的话，会表现的有多差）。然后你就开业把你的训练数据放进模型不断的training（在python代码里，会是 **.fit(训练数据)** 的形式）模型，知道找到使cost function 最低的那套参数值。然后就可以预测啦，新数据a（和X是一个类型的数据），然后去预测b（和Y是一个类型的数据）。】
 
 summary一下：
 
